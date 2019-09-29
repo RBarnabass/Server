@@ -18,7 +18,7 @@ public class User extends BaseEntity {
     private String name;
 
     @Column(nullable = false)
-    private int age;
+    private Integer age;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
